@@ -12,3 +12,14 @@ ol,
 ul {
   list-style: none;
 }
+
+@media (min-width: 600px) {
+    html.light {
+      background-image: linear-gradient(145deg, #221122 55%, #e66858 45%);
+      /* color: rgb(128, 119, 119); */
+      min-height: 100%;
+      font-family: "Rubik", sans-serif;
+      font-size: 1.5rem;
+      color: rgb(104, 100, 100);
+    }
+  }
