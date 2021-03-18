@@ -42,7 +42,7 @@ html {
 
 /* @media (min-width: 600px) { */
 body {
-  background-image: linear-gradient(145deg, #221122 55%, #e66858 45%);
+  background-image: linear-gradient(145deg, #02214e , #0ddaa6 );
   /* color: rgb(128, 119, 119); */
   min-height: 100%;
   font-family: "Orbitron", sans-serif;
@@ -59,7 +59,7 @@ body {
 
 /* @media (min-width: 600px) { */
 body.dark {
-  background-image: linear-gradient(145deg, #130e13 55%, #1f100e 45%);
+  background-image: linear-gradient(145deg, #130e13 , #1f100e );
   color: white;
   font-family: "Orbitron", sans-serif;
   font-size: 1.5rem;
@@ -75,11 +75,8 @@ body.dark {
 } */
 
 /*=========
-1 - Sidebar 
+1 - Sidebar - LIGHT
  =========*/
-
-
-
 
 /* transition from top bar to sidebar */
 @media (min-width: 950px) {
@@ -97,7 +94,6 @@ body.dark {
   }
 }
 
-
 /* remain as header bar */
 @media (min-width: 600px) and (max-width: 950px) {
   .sidebar {
@@ -110,7 +106,6 @@ body.dark {
     z-index: 2;
   }
 }
-
 
 /* mobile view */
 @media (max-width: 600px) {
@@ -127,7 +122,53 @@ body.dark {
 }
 
 /*=========
-2 - Sidebar Contents
+2 - Sidebar DARK
+ =========*/
+/* transition from top bar to sidebar */
+@media (min-width: 950px) {
+  .sidebarDark {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(86, 86, 88);
+    min-height: 100%;
+    flex: 1 1 20%;
+    padding: 1.5rem;
+    z-index: 2;
+   
+  }
+}
+
+/* remain as header bar */
+@media (min-width: 600px) and (max-width: 950px) {
+  .sidebarDark {
+    background: rgb(86, 86, 88);
+    flex: 1 1 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
+    z-index: 2;
+  }
+}
+
+/* mobile view */
+@media (max-width: 600px) {
+  .sidebarDark {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 100vw;
+    background: rgb(86, 86, 88);
+    padding: 1rem;
+    z-index: 2;
+  }
+}
+
+/*=========
+3 - Sidebar Contents
  =========*/
 
  .dateTime {
@@ -141,7 +182,7 @@ body.dark {
 
 
 /*===========
-3 - Theme Toggle Switch
+4 - Theme Toggle Switch
 ============*/
 
 .switch {
@@ -198,7 +239,7 @@ input:checked + .slider:before {
 }
 
 /*=========
-3 - Main Container
+5 - Main Container
 =========*/
 
 .main-container {
@@ -211,6 +252,6 @@ input:checked + .slider:before {
 }
 
 /*=========
-4 - Main Container
+6 - Main Container
 =========*/
 
