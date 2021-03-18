@@ -34,6 +34,12 @@ ul {
 
 ====================*/
 
+html {
+  font-family: "Orbitron", sans-serif;
+
+}
+
+
 /* @media (min-width: 600px) { */
 body {
   background-image: linear-gradient(145deg, #221122 55%, #e66858 45%);
@@ -72,20 +78,11 @@ body.dark {
 1 - Sidebar 
  =========*/
 
-/* remain as header bar */
-@media (min-width: 600px) and (max-width: 1300px) {
-  .sidebar {
-    background: white;
-    flex: 1 1 20%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 2;
-  }
-}
+
+
 
 /* transition from top bar to sidebar */
-@media (min-width: 1300px) {
+@media (min-width: 950px) {
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -94,9 +91,26 @@ body.dark {
     background: white;
     min-height: 100%;
     flex: 1 1 20%;
+    padding: 1.5rem;
+    z-index: 2;
+   
+  }
+}
+
+
+/* remain as header bar */
+@media (min-width: 600px) and (max-width: 950px) {
+  .sidebar {
+    background: white;
+    flex: 1 1 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5rem;
     z-index: 2;
   }
 }
+
 
 /* mobile view */
 @media (max-width: 600px) {
@@ -107,16 +121,33 @@ body.dark {
     align-items: center;
     min-width: 100vw;
     background: white;
+    padding: 1rem;
     z-index: 2;
   }
 }
 
+/*=========
+2 - Sidebar Contents
+ =========*/
+
+ .dateTime {
+   display: flex;
+   /* justify-content: center;
+   align-items: center; */
+   text-align: center;
+ }
+
+
+
+
 /*===========
-2 - Theme Toggle Switch
+3 - Theme Toggle Switch
 ============*/
 
 .switch {
-  position: relative;
+  position: absolute;
+  top: 25px;
+  left: 25px;
   display: inline-block;
   width: 60px;
   height: 34px;

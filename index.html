@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-   
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script type="text/Javascript" 
+    src="https://momentjs.com/downloads/moment.min.js">
+    </script>
+
     <title>Daily Planner</title>
-</head>
+  </head>
 
-<body>
-     <header class="sidebar">
+  <body>
+    <header class="sidebar" class="jumbotron jumbotron-fluid custom-jumbotron">
+      <label class="switch">
+        <input type="checkbox" id="theme-switcher" />
+        <span class="slider"></span>
+      </label>
 
-        <label class="switch">
-            <input type="checkbox" id="theme-switcher" />
-            <span class="slider"></span>
-        </label>
+      <section class="dateTime" id="dateTime">
+        <div class="date" class="date">
+            <h2>Time &amp; Date: <br /> 
+                <span id="time-display">00:00:00</span>
+            </h2>
+        </div>
 
-        <section class="dateTime" id="dateTime">
-            
-            <div class="date" class="date"></div>
-           
-            <div class="time" id="time"></div>
-
-        </section>
-
+        <div class="time" id="time"></div>
+      </section>
     </header>
 
- <main class="main-container">
+    <main class="main-container"></main>
 
-
-
-
-
-
-
-
- </main>   
-
-
- <!-- <footer id="contact">
+    <!-- <footer id="contact">
 
     <nav class="footer-links">
         <h4>Contact |</h4>
@@ -49,11 +54,6 @@
     
     </nav>
 </footer> -->
-
-
-
-
-    
-</body>
-<script src="./script.js"></script>
+  </body>
+  <script src="./script.js"></script>
 </html>
