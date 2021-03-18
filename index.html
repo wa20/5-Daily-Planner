@@ -17,12 +17,15 @@
     />
     <link rel="stylesheet" href="./style.css" />
 
-
     <title>Daily Planner</title>
   </head>
 
   <body>
-    <header class="sidebar" id="sidebar" class="jumbotron jumbotron-fluid custom-jumbotron">
+    <header
+      class="sidebar"
+      id="sidebar"
+      class="jumbotron jumbotron-fluid custom-jumbotron"
+    >
       <label class="switch">
         <input type="checkbox" id="theme-switcher" />
         <span class="slider"></span>
@@ -30,9 +33,10 @@
 
       <section class="dateTime" id="dateTime">
         <div class="date" class="date">
-            <h2>Time &amp; Date: <br /> 
-                <span id="time-display">00:00:00</span>
-            </h2>
+          <h2>
+            Time &amp; Date: <br />
+            <span id="time-display">00:00:00</span>
+          </h2>
         </div>
 
         <div class="time" id="time"></div>
@@ -40,59 +44,52 @@
     </header>
 
     <main class="main-container">
-        <div class="row time-block"> 
-            <div class="col-md-2 hour"> 9.00 AM</div>
-            <textarea class="col-md-8"></textarea>
-            <button class="col-md-2 saveBtn"></button>
-        </div>    
-        <div class="row time-block"> 
-            <div class="col-md-2 hour"> 10.00 AM</div>
-            <textarea class="col-md-8"></textarea>
-            <button class="col-md-2 saveBtn"></button>
-        </div>    
-        <div class="row time-block"> 
-            <div class="col-md-2 hour"> 11.00 AM</div>
-            <textarea class="col-md-8"></textarea>
-            <button class="col-md-2 saveBtn"></button>
-        </div>    
-        <div class="row time-block"> 
-            <div class="col-md-2 hour"> 12.00 AM</div>
-            <textarea class="col-md-8"></textarea>
-            <button class="col-md-2 saveBtn"></button>
-        </div>    
-        <div class="row time-block"> 
-            <div class="col-md-2 hour"> 13:00 AM</div>
-            <textarea class="col-md-8"></textarea>
-            <button class="col-md-2 saveBtn"></button>
-        </div>    
-        <div class="row time-block"> 
-            <div class="col-md-2 hour"> 14.00 AM</div>
-            <textarea class="col-md-8"></textarea>
-            <button class="col-md-2 saveBtn"></button>
-        </div>    
-        <div class="row time-block"> 
-            <div class="col-md-2 hour"> 15.00 AM</div>
-            <textarea class="col-md-8"></textarea>
-            <button class="col-md-2 saveBtn"></button>
-        </div>    
-        <div class="row time-block"> 
-            <div class="col-md-2 hour"> 16.00 AM</div>
-            <textarea class="col-md-8"></textarea>
-            <button class="col-md-2 saveBtn"></button>
-        </div>    
-        <div class="row time-block"> 
-            <div class="col-md-2 hour"> 17.00 AM</div>
-            <textarea class="col-md-8"></textarea>
-            <button class="col-md-2 saveBtn"></button>
-        </div>    
+      <div class="row time-block" id="9">
+        <div class="col-md-2 hour">9.00 AM</div>
+        <textarea class="col-md-8 description"></textarea>
+        <button class="col-md-2 saveBtn"></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-md-2 hour">10.00 AM</div>
+        <textarea class="col-md-8"></textarea>
+        <button class="col-md-2 saveBtn"></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-md-2 hour">11.00 AM</div>
+        <textarea class="col-md-8"></textarea>
+        <button class="col-md-2 saveBtn"></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-md-2 hour">12.00 AM</div>
+        <textarea class="col-md-8"></textarea>
+        <button class="col-md-2 saveBtn"></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-md-2 hour">13:00 AM</div>
+        <textarea class="col-md-8"></textarea>
+        <button class="col-md-2 saveBtn"></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-md-2 hour">14.00 AM</div>
+        <textarea class="col-md-8"></textarea>
+        <button class="col-md-2 saveBtn"></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-md-2 hour">15.00 AM</div>
+        <textarea class="col-md-8"></textarea>
+        <button class="col-md-2 saveBtn"></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-md-2 hour">16.00 AM</div>
+        <textarea class="col-md-8"></textarea>
+        <button class="col-md-2 saveBtn"></button>
+      </div>
+      <div class="row time-block">
+        <div class="col-md-2 hour">17.00 AM</div>
+        <textarea class="col-md-8"></textarea>
+        <button class="col-md-2 saveBtn"></button>
+      </div>
     </main>
-
-
-
-
-
-
-
 
     <!-- <footer id="contact">
 
@@ -107,8 +104,15 @@
   </body>
   <script src="./script.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+  ></script>
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> -->
-
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"
+  ></script>
 </html>

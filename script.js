@@ -28,3 +28,12 @@ let mode = "light";
     var rightNow = moment().format('MMM DD, YYYY [at] hh:mm:ss a');
     timeDisplayEl.text(rightNow);
   }
+
+
+  $(".saveBtn").on("click", function (){
+      
+    var activity = $(this).siblings(".description".val())
+
+    console.log(activity)
+
+  })
