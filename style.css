@@ -144,6 +144,7 @@ body.dark {
     z-index: 2;
     background-image: url("./Assets/NIGHT.png");
     background-size: cover;
+    box-shadow: 2px 2px 80px 0px rgba(84, 49, 182, 0.521);
    
   }
 }
@@ -160,6 +161,7 @@ body.dark {
     z-index: 2;
     background-image: url("./Assets/NIGHT.png");
     background-size: cover;
+    box-shadow: 2px 2px 80px 0px rgba(84, 49, 182, 0.521);
   }
 }
 
@@ -176,6 +178,7 @@ body.dark {
     z-index: 2;
     background-image: url("./Assets/NIGHT.png");
     background-size: cover;
+    box-shadow: 2px 2px 80px 0px rgba(84, 49, 182, 0.521);
   }
 }
 
@@ -268,18 +271,18 @@ input:checked + .slider:before {
   font-size: 1.2rem;
   margin: 5px;
   
-  
 }
 
 .hour{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: rgba(255, 255, 255, 0.521);
   /* border-style: none; */
   margin: 2px;
   box-shadow: 0 0 5px 1px rgb(87, 86, 86);
   font-family: "Orbitron", sans-serif;
+  border-radius: 10px;
 }
 
 .description{
@@ -287,8 +290,10 @@ input:checked + .slider:before {
   align-items: center;
   border-style: none;
   margin: 2px;
+  background: rgba(255, 255, 255, 0.521);
   box-shadow: 0 0 5px 1px rgb(87, 86, 86);
   font-family: "Orbitron", sans-serif;
+  border-radius: 10px 10px;
 }
 
 .saveBtn {
@@ -298,6 +303,7 @@ input:checked + .slider:before {
   margin: 2px;
   border-style: none;
   background: transparent;
+  border-radius: 10px;
 }
 
 .save {
@@ -309,3 +315,6 @@ input:checked + .slider:before {
   color: white;
 }
 
+p.time {
+  background: rgba(240, 255, 255, 0.342);
+}
