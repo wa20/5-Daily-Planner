@@ -178,9 +178,6 @@ body.dark {
    text-align: center;
  }
 
-
-
-
 /*===========
 4 - Theme Toggle Switch
 ============*/
@@ -254,4 +251,47 @@ input:checked + .slider:before {
 /*=========
 6 - Main Container
 =========*/
+.row {
+  font-size: 1.2rem;
+  margin: 5px;
+  
+  
+}
 
+.hour{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  /* border-style: none; */
+  margin: 2px;
+  box-shadow: 0 0 5px 1px rgb(87, 86, 86);
+  font-family: "Orbitron", sans-serif;
+}
+
+.description{
+  display: flex;
+  align-items: center;
+  border-style: none;
+  margin: 2px;
+  box-shadow: 0 0 5px 1px rgb(87, 86, 86);
+  font-family: "Orbitron", sans-serif;
+}
+
+.saveBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  border-style: none;
+  background: transparent;
+}
+
+.save {
+  font-size: 60px;
+  
+}
+
+.save:hover {
+  color: white;
+}
