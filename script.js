@@ -19,7 +19,10 @@ let mode = "light";
   });
 
 
-  var time = moment().format('DD MM YY | HH:MM A');
+  var date = moment().format('Do MMMM YYYY');
+  $(".date").text(date)
+
+  var time = moment().format('HH:MM A');
   $(".time").text(time)
 
 
