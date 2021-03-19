@@ -260,30 +260,45 @@ input:checked + .slider:before {
 
 @media (max-width: 950px) {
   .dateTime {
-    
+    /* position: relative;
+    left: 20%; */
     background: rgba(94, 95, 95, 0.521);
     border-radius: 5px;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 20px;
+    box-shadow: 0 0 5px 1px rgb(87, 86, 86);
+    backdrop-filter: blur(10px);
   }
   }
   
   @media (min-width: 950px) {
     .dateTime {
-      position: relative;
-      top: -10%;
+      /* position: relative;
+      top: 5%; */
       background: rgba(94, 95, 95, 0.521);
       border-radius: 5px;
       padding: 10px;
       font-size: 2.5rem;
       margin: 10px;
+      box-shadow: 0 0 5px 1px rgb(87, 86, 86);
+      backdrop-filter: blur(10px);
     }
   }
 /*=========
 6 - Clear Button
 =========*/
 
+.clear {
+  width: 100px;
+  height: 50px;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgb(87, 86, 86);
+  background: rgba(94, 95, 95, 0.521);
+  backdrop-filter: blur(10px);
+
+}
 
 
 
@@ -322,6 +337,7 @@ input:checked + .slider:before {
   box-shadow: 0 0 5px 1px rgb(87, 86, 86);
   font-family: "Orbitron", sans-serif;
   border-radius: 10px;
+  backdrop-filter: blur(10px);
 }
 
 .description{
@@ -333,6 +349,7 @@ input:checked + .slider:before {
   box-shadow: 0 0 5px 1px rgb(87, 86, 86);
   font-family: "Orbitron", sans-serif;
   border-radius: 10px 10px;
+  backdrop-filter: blur(10px);
 }
 
 .saveBtn {
@@ -345,9 +362,24 @@ input:checked + .slider:before {
   border-radius: 10px;
 }
 
+
+
 .save {
   font-size: 60px;
+  margin: 2px;
   
+  
+}
+
+.delete {
+  font-size: 60px;
+  margin: 2px;
+
+}
+
+
+.delete:hover {
+  color: white;
 }
 
 .save:hover {
