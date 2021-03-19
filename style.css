@@ -90,6 +90,8 @@ body.dark {
     flex: 1 1 20%;
     padding: 1.5rem;
     z-index: 2;
+    background-image: url("./Assets/DAY.png");
+    background-size: cover;
    
   }
 }
@@ -104,6 +106,8 @@ body.dark {
     align-items: center;
     padding: 1.5rem;
     z-index: 2;
+    background-image: url("./Assets/DAY.png");
+    background-size:cover;
   }
 }
 
@@ -118,6 +122,8 @@ body.dark {
     background: white;
     padding: 1rem;
     z-index: 2;
+    background-image: url("./Assets/DAY.png");
+    background-size: cover;
   }
 }
 
@@ -131,11 +137,13 @@ body.dark {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background: rgb(86, 86, 88);
+    /* background: rgb(86, 86, 88);  */
     min-height: 100%;
     flex: 1 1 20%;
     padding: 1.5rem;
     z-index: 2;
+    background-image: url("./Assets/NIGHT.png");
+    background-size: cover;
    
   }
 }
@@ -143,13 +151,15 @@ body.dark {
 /* remain as header bar */
 @media (min-width: 600px) and (max-width: 950px) {
   .sidebarDark {
-    background: rgb(86, 86, 88);
+    /* background: rgb(86, 86, 88); */
     flex: 1 1 20%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1.5rem;
     z-index: 2;
+    background-image: url("./Assets/NIGHT.png");
+    background-size: cover;
   }
 }
 
@@ -161,9 +171,11 @@ body.dark {
     justify-content: space-around;
     align-items: center;
     min-width: 100vw;
-    background: rgb(86, 86, 88);
+    /* background: rgb(86, 86, 88); */
     padding: 1rem;
     z-index: 2;
+    background-image: url("./Assets/NIGHT.png");
+    background-size: cover;
   }
 }
 
@@ -173,6 +185,7 @@ body.dark {
 
  .dateTime {
    display: flex;
+   flex-direction: column;
    /* justify-content: center;
    align-items: center; */
    text-align: center;
@@ -295,3 +308,4 @@ input:checked + .slider:before {
 .save:hover {
   color: white;
 }
+
