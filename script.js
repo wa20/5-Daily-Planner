@@ -18,7 +18,7 @@ let mode = "light";
     }
   });
 
-
+// time and date elements
   var date = moment().format('Do MMMM YYYY');
   $(".date").text(date)
 
@@ -27,14 +27,13 @@ let mode = "light";
 
 
 
-  //Time
-  var timeDisplayEl = document.getElementById('time-display');
+  //Time displ
+//   var timeDisplayEl = document.getElementById('time-display');
 
 
 
   //Jquery - submit button
   $(".saveBtn").on("click", function (){
-      
     var activity = $(this).siblings(".description").val()
     var time = $(this).parent().attr("id")
 
@@ -42,8 +41,19 @@ let mode = "light";
     console.log(time);
 
     localStorage.setItem(time, activity)
-
   });
+
+
+$(".clearBtn").on("click", function () {
+    localStorage.clear();       // clear local storage
+    location.reload();          // reload page
+});
+
+
+//Jquery - clear button
+// $("")
+
+
   $("#8 .description").val(localStorage.getItem("9"));
   $("#9 .description").val(localStorage.getItem("9"));
   $("#10 .description").val(localStorage.getItem("10"));
