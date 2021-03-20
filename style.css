@@ -305,10 +305,6 @@ input:checked + .slider:before {
 }
 
 
-
-
-
-
 /*=========
 6 - Main Container
 =========*/
@@ -336,7 +332,6 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.397);
-  /* border-style: none; */
   margin: 5px;
   box-shadow: 0 0 5px 1px rgb(87, 86, 86);
   font-family: "Orbitron", sans-serif;
@@ -354,6 +349,8 @@ input:checked + .slider:before {
   font-family: "Orbitron", sans-serif;
   border-radius: 10px 10px;
   backdrop-filter: blur(10px);
+  
+ 
 }
 
 .saveBtn, .clearBtn {
@@ -368,8 +365,6 @@ input:checked + .slider:before {
   width: 2.6vw;
 }
 
-
-
 .save, .delete {
   font-size: 3.5rem;
   margin: 2px; 
@@ -381,6 +376,44 @@ input:checked + .slider:before {
 }
 
 
+/*=========
+7 - current time colours
+=========*/
 
+.pastTime {
+  display: flex;
+  align-items: center;
+  border-style: none;
+  margin: 5px;
+  background: rgba(129, 21, 2, 0.589);
+  box-shadow: 0 0 5px 1px rgb(129, 21, 2, 0.589);
+  font-family: "Orbitron", sans-serif;
+  border-radius: 10px 10px;
+  backdrop-filter: blur(10px);
+ 
+}
 
+.presentTime {
+  display: flex;
+  align-items: center;
+  border-style: none;
+  margin: 5px;
+  background: rgba(255, 255, 255, 0.397);
+  box-shadow: 0 0 5px 1px rgb(87, 86, 86);
+  font-family: "Orbitron", sans-serif;
+  border-radius: 10px 10px;
+  backdrop-filter: blur(10px);
+}
 
+.futureTime {
+  display: flex;
+  align-items: center;
+  border-style: none;
+  margin: 5px;
+  background: rgba(3, 78, 3, 0.329);
+  box-shadow: 0 0 5px 1px rgb(3, 78, 3, 0.329);
+  font-family: "Orbitron", sans-serif;
+  border-radius: 10px 10px;
+  backdrop-filter: blur(10px);
+  
+}
