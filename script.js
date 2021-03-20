@@ -44,17 +44,22 @@ let mode = "light";
   });
 
 
+
 $(".clearBtn").on("click", function () {
-    localStorage.clear();       // clear local storage
+
+    var activity = $(this).siblings(".description").val()
+    var time = $(this).parent().attr("id")
+
+    localStorage.clear(time, activity);       // clear local storage
     location.reload();          // reload page
 });
 
 
 //Jquery - clear button
-// $("")
+$("")
 
 
-  $("#8 .description").val(localStorage.getItem("9"));
+  $("#8 .description").val(localStorage.getItem("8"));
   $("#9 .description").val(localStorage.getItem("9"));
   $("#10 .description").val(localStorage.getItem("10"));
   $("#11 .description").val(localStorage.getItem("11"));
