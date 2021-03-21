@@ -2,6 +2,7 @@
 //Theme switcher
 const bodyEl = document.querySelector("body");
 const headerEl = document.getElementById("sidebar");
+const saveButton = document.getElementById("save")
 const themeSwitcher = document.querySelector("#theme-switcher");
 
 let mode = "light";
@@ -11,10 +12,12 @@ let mode = "light";
       mode = "dark";
       bodyEl.setAttribute("class", "dark");
       headerEl.setAttribute("class", "sidebarDark");
+      saveButton.setAttribute("class", "saveDark");
     } else {
       mode = "light";
       bodyEl.setAttribute("class", "light");
       headerEl.setAttribute("class", "sidebar");
+      saveButton.setAttribute("class", "save");
     }
   });
 
@@ -48,7 +51,7 @@ let mode = "light";
     localStorage.setItem(time, activity)
   });
 
-
+  $("")
   $("#8 .description").val(localStorage.getItem("8"));
   $("#9 .description").val(localStorage.getItem("9"));
   $("#10 .description").val(localStorage.getItem("10"));
@@ -85,10 +88,6 @@ $(".clear").on("click", function (){
 });
 
 
-//Jquery - clear button
-// $("")
-
-// $("#8 .description").val(localStorage.clear("8"));
 
 
 

@@ -297,10 +297,26 @@ input:checked + .slider:before {
   backdrop-filter: blur(10px);
   margin: 20px;
   font-weight: bolder;
+  font-size: 1.6rem;
 }
 
 .clear:hover {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 70px;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgb(87, 86, 86);
+  background: rgba(119, 3, 3, 0.664);
+  backdrop-filter: blur(10px);
+  margin: 20px;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: rgb(255, 247, 233);
+
 }
 
 /*=========
@@ -351,16 +367,18 @@ input:checked + .slider:before {
 }
 
 .saveBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
   margin-left: 15px;
   border-style: none;
   background: transparent;
-  border-radius: 10px;
   width: 2.6vw;
 }
 
+/*======== 
+Save Light Mode
+==========*/
 .save {
   font-size: 3.7rem;
 }
@@ -368,6 +386,22 @@ input:checked + .slider:before {
 .save:hover {
   color: white;
 }
+
+
+/*======== 
+Save Dark Mode
+==========*/
+.saveDark {
+  font-size: 3.7rem;
+  color: white;
+}
+
+.saveDark:hover {
+  color: rgba(255, 255, 255, 0.281);
+}
+
+
+
 
 /*=========
 7 - current time colours
