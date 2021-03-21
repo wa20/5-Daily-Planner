@@ -49,6 +49,7 @@ body {
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 /* } */
@@ -357,7 +358,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 25px; */
+  margin-left: 20px;
   border-style: none;
   /* background: rgba(255, 255, 255, 0.123); */
   background: transparent;
@@ -366,8 +367,8 @@ input:checked + .slider:before {
 }
 
 .save, .delete {
-  font-size: 3.5rem;
-  margin: 2px; 
+  font-size: 3.7rem;
+  /* margin: 2px;  */
 }
 
 

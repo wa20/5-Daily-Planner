@@ -83,25 +83,25 @@ let mode = "light";
 function currentTime () {
  
     var  currentHour = moment().hour(); 
-    
-    $(" ").each(function() {
-     
-    var timeBlock = $(this).parent().attr("id");
 
-    if(timeBlock === currentHour) {
+    $(".time-block").each(function () {
+        
+        var timeBlock = parseInt($(this).attr("id"));
+        console.log( blockHour, currentHour)
+   
+    if(currentHour === timeBlock) {
         $(this).addClass("presentTime");
         $(this).removeClass("pastTime");
         $(this).removeClass("futureTime");
 
-
     } else 
-        if (timeBlock > currentHour) {
+        if (currentHour > timeBlock) {
             $(this).removeClass("presentTime");
             $(this).addClass("pastTime");
             $(this).removeClass("futureTime");
         
     } else 
-        if (timeBlock < currentHour) {
+        if (currentHour < timeBlock) {
             $(this).removeClass("presentTime");
             $(this).removeClass("pastTime");
             $(this).addClass("futureTime");
@@ -109,7 +109,8 @@ function currentTime () {
 
     })
 
-currentHour()
+
+currentHour();
 
 }
 
