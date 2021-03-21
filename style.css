@@ -99,11 +99,12 @@ body.dark {
 }
 
 /* remain as header bar */
-@media (min-width: 601px) and (max-width: 949px) {
+@media (min-width: 600px) and (max-width: 950px) {
   .sidebar {
     background: white;
     flex: 1 1 20%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 1.5rem;
@@ -154,11 +155,12 @@ body.dark {
 }
 
 /* remain as header bar */
-@media (min-width: 601px) and (max-width: 949px) {
+@media (min-width: 600px) and (max-width: 950px) {
   .sidebarDark {
     /* background: rgb(86, 86, 88); */
     flex: 1 1 20%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 1.5rem;
@@ -323,6 +325,9 @@ input:checked + .slider:before {
 6 - Main Container
 =========*/
 .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-size: 1.2rem;
   margin: 5px;
   
@@ -358,7 +363,7 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 20px;
+  margin-left: 15px;
   border-style: none;
   /* background: rgba(255, 255, 255, 0.123); */
   background: transparent;
@@ -368,7 +373,6 @@ input:checked + .slider:before {
 
 .save, .delete {
   font-size: 3.7rem;
-  /* margin: 2px;  */
 }
 
 
