@@ -2,7 +2,6 @@
 //Theme switcher
 const bodyEl = document.querySelector("body");
 const headerEl = document.getElementById("sidebar");
-const saveButton = document.getElementById("save")
 const themeSwitcher = document.querySelector("#theme-switcher");
 
 let mode = "light";
@@ -12,12 +11,11 @@ let mode = "light";
       mode = "dark";
       bodyEl.setAttribute("class", "dark");
       headerEl.setAttribute("class", "sidebarDark");
-      saveButton.setAttribute("class", "saveDark");
     } else {
       mode = "light";
       bodyEl.setAttribute("class", "light");
       headerEl.setAttribute("class", "sidebar");
-      saveButton.setAttribute("class", "save");
+   
     }
   });
 
@@ -66,8 +64,6 @@ let mode = "light";
 
 
 
-
-
 $(".clear").text("CLEAR ALL")
 
 $(".clear").on("click", function (){
@@ -88,52 +84,20 @@ $(".clear").on("click", function (){
 });
 
 
+var  currentHour = moment().hour(); 
+var  timeBlock = $(id)
 
-
-
-
-
-
-//current time tracker
-function currentTime () {
- 
-    var  currentHour = moment().hour(); 
-
-    $(".time-block").each(function () {
-        
-        var timeBlock = parseInt($(this).attr("id"));
-        console.log( blockHour, currentHour)
-   
-    if(currentHour === timeBlock) {
-        $(this).addClass("presentTime");
-        $(this).removeClass("pastTime");
-        $(this).removeClass("futureTime");
-
-    } else 
-        if (currentHour > timeBlock) {
-            $(this).removeClass("presentTime");
-            $(this).addClass("pastTime");
-            $(this).removeClass("futureTime");
-        
-    } else 
-        if (currentHour < timeBlock) {
-            $(this).removeClass("presentTime");
-            $(this).removeClass("pastTime");
-            $(this).addClass("futureTime");
-        }
-
-    })
-
-
-currentHour();
-
+if (currentHour > 9) {
+    $(".description .hour").addClass("pastTime");
+} else if (now >= 9 && now < 10) {
+    $(".description .hour").addClass("presentTime");
+} else if (now < 9) {
+    $(".description .hour").addClass("futureTime");
 }
 
 
-// if (now > 9) {
-//     $("#time-0").addClass("past");
-// } else if (now >= 9 && now < 10) {
-//     $("#time-0").addClass("present");
-// } else if (now < 9) {
-//     $("#time-0").addClass("future");
-// }
+
+
+
+
+

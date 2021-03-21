@@ -381,6 +381,7 @@ Save Light Mode
 ==========*/
 .save {
   font-size: 3.7rem;
+  color: rgba(226, 241, 15, 0.466);
 }
 
 .save:hover {
