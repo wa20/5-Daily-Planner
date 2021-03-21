@@ -36,13 +36,11 @@ ul {
 
 html {
   font-family: "Orbitron", sans-serif;
-
 }
-
 
 /* @media (min-width: 600px) { */
 body {
-  background-image: linear-gradient(145deg,#0ddaa6 10%, #02214e);
+  background-image: linear-gradient(145deg, #0ddaa6 10%, #02214e);
   /* color: rgb(128, 119, 119); */
   min-height: 100%;
   font-family: "Orbitron", sans-serif;
@@ -60,7 +58,7 @@ body {
 
 /* @media (min-width: 600px) { */
 body.dark {
-  background-image: linear-gradient(145deg, #130e13 60% , #1f100e 40%);
+  background-image: linear-gradient(145deg, #130e13 60%, #1f100e 40%);
   color: white;
   font-family: "Orbitron", sans-serif;
   font-size: 1.5rem;
@@ -84,7 +82,7 @@ body.dark {
   .sidebar {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background: white;
     min-height: 100%;
@@ -94,7 +92,6 @@ body.dark {
     background-image: url("./Assets/DAY.png");
     background-size: cover;
     box-shadow: 0px 0px 40px 0px rgba(122, 122, 122, 0.678);
-   
   }
 }
 
@@ -110,7 +107,7 @@ body.dark {
     padding: 1.5rem;
     z-index: 2;
     background-image: url("./Assets/DAY.png");
-    background-size:cover;
+    background-size: cover;
     box-shadow: 0px 0px 40px 0px rgba(122, 122, 122, 0.678);
   }
 }
@@ -140,7 +137,7 @@ body.dark {
   .sidebarDark {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     /* background: rgb(86, 86, 88);  */
     min-height: 100%;
@@ -150,7 +147,6 @@ body.dark {
     background-image: url("./Assets/NIGHT.png");
     background-size: cover;
     box-shadow: 0px 0px 40px 0px rgba(255, 255, 255, 0.678);
-   
   }
 }
 
@@ -192,13 +188,13 @@ body.dark {
 3 - Sidebar Contents
  =========*/
 
- .dateTime {
-   display: flex;
-   flex-direction: column;
-   /* justify-content: center;
+.dateTime {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
    align-items: center; */
-   text-align: center;
- }
+  text-align: center;
+}
 
 /*===========
 4 - Theme Toggle Switch
@@ -241,7 +237,6 @@ body.dark {
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  
 }
 
 input:checked + .slider {
@@ -258,17 +253,12 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-
-
 /*=========
 5 - Time and Date
 =========*/
 
-
 @media (max-width: 950px) {
   .dateTime {
-    /* position: relative;
-    left: 20%; */
     background: rgba(94, 95, 95, 0.521);
     border-radius: 5px;
     padding: 10px;
@@ -277,36 +267,41 @@ input:checked + .slider:before {
     box-shadow: 0 0 5px 1px rgb(87, 86, 86);
     backdrop-filter: blur(10px);
   }
+}
+
+@media (min-width: 950px) {
+  .dateTime {
+    background: rgba(94, 95, 95, 0.521);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 2.5rem;
+    margin: 10px;
+    box-shadow: 0 0 5px 1px rgb(87, 86, 86);
+    backdrop-filter: blur(10px);
   }
-  
-  @media (min-width: 950px) {
-    .dateTime {
-      /* position: relative;
-      top: 5%; */
-      background: rgba(94, 95, 95, 0.521);
-      border-radius: 5px;
-      padding: 10px;
-      font-size: 2.5rem;
-      margin: 10px;
-      box-shadow: 0 0 5px 1px rgb(87, 86, 86);
-      backdrop-filter: blur(10px);
-    }
-  }
+}
 /*=========
 6 - Clear Button
 =========*/
 
 .clear {
-  width: 150px;
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 60px;
   border-style: none;
   border-radius: 5px;
   box-shadow: 0 0 5px 1px rgb(87, 86, 86);
   background: rgba(94, 95, 95, 0.521);
   backdrop-filter: blur(10px);
-
+  margin: 20px;
+  font-weight: bolder;
 }
 
+.clear:hover {
+  
+}
 
 /*=========
 6 - Main Container
@@ -318,7 +313,6 @@ input:checked + .slider:before {
   margin-bottom: auto;
   min-height: 100vh;
   flex-wrap: wrap;
-  /* background: rgba(255, 255, 255, 0.103); */ 
 }
 
 /*=========
@@ -330,10 +324,9 @@ input:checked + .slider:before {
   justify-content: center;
   font-size: 1.2rem;
   margin: 5px;
-  
 }
 
-.hour{
+.hour {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,7 +338,7 @@ input:checked + .slider:before {
   backdrop-filter: blur(10px);
 }
 
-.description{
+.description {
   display: flex;
   align-items: center;
   border-style: none;
@@ -355,17 +348,14 @@ input:checked + .slider:before {
   font-family: "Orbitron", sans-serif;
   border-radius: 10px 10px;
   backdrop-filter: blur(10px);
-  
- 
 }
 
-.saveBtn{
+.saveBtn {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 15px;
   border-style: none;
-  /* background: rgba(255, 255, 255, 0.123); */
   background: transparent;
   border-radius: 10px;
   width: 2.6vw;
@@ -375,11 +365,9 @@ input:checked + .slider:before {
   font-size: 3.7rem;
 }
 
-
 .save:hover {
   color: white;
 }
-
 
 /*=========
 7 - current time colours
@@ -395,7 +383,6 @@ input:checked + .slider:before {
   font-family: "Orbitron", sans-serif;
   border-radius: 10px 10px;
   backdrop-filter: blur(10px);
- 
 }
 
 .presentTime {
@@ -420,5 +407,4 @@ input:checked + .slider:before {
   font-family: "Orbitron", sans-serif;
   border-radius: 10px 10px;
   backdrop-filter: blur(10px);
-  
 }

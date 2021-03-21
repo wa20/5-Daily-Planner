@@ -22,8 +22,13 @@ let mode = "light";
   var date = moment().format('Do MMMM YYYY');
   $(".date").text(date)
 
+  var day = moment().format('dddd');
+  $(".day").text(day)
+
   var time = moment().format('HH:MM A');
   $(".time").text(time)
+
+
 
 
 
@@ -59,9 +64,12 @@ let mode = "light";
 
 
 
+
+$(".clear").text("CLEAR ALL")
+
 $(".clear").on("click", function (){
 
-    var clear = window.confirm("Clear all data?")
+    var clear = window.confirm("WARNING: THIS WILL CLEAR ALL DATA?")
 
     if(!clear) {
         return
