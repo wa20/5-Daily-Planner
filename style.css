@@ -362,7 +362,7 @@ input:checked + .slider:before {
   background: rgba(255, 255, 255, 0.397);
   box-shadow: 0 0 5px 1px rgb(87, 86, 86);
   font-family: "Orbitron", sans-serif;
-  border-radius: 10px 10px;
+  border-radius: 10px;
   backdrop-filter: blur(10px);
 }
 
@@ -387,21 +387,6 @@ Save Light Mode
 .save:hover {
   color: white;
 }
-
-
-/*======== 
-Save Dark Mode
-==========*/
-.saveDark {
-  font-size: 3.7rem;
-  color: white;
-}
-
-.saveDark:hover {
-  color: rgba(255, 255, 255, 0.281);
-}
-
-
 
 
 /*=========

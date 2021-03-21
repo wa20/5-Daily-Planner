@@ -85,15 +85,51 @@ $(".clear").on("click", function (){
 
 
 var  currentHour = moment().hour(); 
-var  timeBlock = $(id)
+// var  timeBlock = $parseInt($(this).attr("id"));
+
+// var timeBlock = $(this).parent().attr("id");
+
+var hour8 = $(this).parent().attr("id");
+var hour9 = $("#9");
+var hour10 = $("#10");
+var hour11 = $("#11");
+var hour12 = $("#12");
+var hour13 = $("#13");
+var hour14 = $("#14");
+var hour15 = $("#15");
+var hour16 = $("#16");
+var hour17 = $("#17");
+var hour18 = $("#18");
+
+
+
+console.log(hour8)
+console.log(hour12)
+
+// for(i = 0; i < timeBlock.length; i++) {
+
+// function hour8() {
+
+//     if (currentHour > 8) {
+//         $(".description").addClass("pastTime");
+//     } else if (currentHour === 8) {
+//         $(".description").addClass("presentTime");
+//     } else if (currentHour < 8) {
+//         $(".description").addClass("futureTime");
+//     }
+// }
+
+// }
+
 
 if (currentHour > 9) {
-    $(".description .hour").addClass("pastTime");
-} else if (now >= 9 && now < 10) {
-    $(".description .hour").addClass("presentTime");
-} else if (now < 9) {
-    $(".description .hour").addClass("futureTime");
+    $(".description").addClass("pastTime");
+} else if (currentHour == 9) {
+    $(".description").addClass("presentTime");
+} else if (currentHour < 9) {
+    $(".description").addClass("futureTime");
 }
+
 
 
 
