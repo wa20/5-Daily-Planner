@@ -297,7 +297,7 @@ input:checked + .slider:before {
 =========*/
 
 .clear {
-  width: 100px;
+  width: 150px;
   height: 50px;
   border-style: none;
   border-radius: 5px;
@@ -359,7 +359,7 @@ input:checked + .slider:before {
  
 }
 
-.saveBtn, .clearBtn {
+.saveBtn{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -371,12 +371,12 @@ input:checked + .slider:before {
   width: 2.6vw;
 }
 
-.save, .delete {
+.save {
   font-size: 3.7rem;
 }
 
 
-.delete:hover, .save:hover {
+.save:hover {
   color: white;
 }
 

@@ -59,14 +59,22 @@ let mode = "light";
 
 
 
-// $(".clearBtn").on("click", function (){
+$(".clear").on("click", function (){
 
-//     var activities = $(this).siblings(".description").val()
-//     var timer = $(this).parent().attr("id")
+    var clear = window.confirm("Clear all data?")
 
-//     localStorage.clear(timer, activities);  
-//     location.reload();                
-// });
+    if(!clear) {
+        return
+    } else {
+
+    var activities = $(this).siblings(".description").val()
+    var timer = $(this).parent().attr("id")
+
+    localStorage.clear(timer, activities);  
+    location.reload();   
+    
+    }
+});
 
 
 //Jquery - clear button
