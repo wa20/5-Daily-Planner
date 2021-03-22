@@ -18,14 +18,16 @@ themeSwitcher.addEventListener("click", function () {
 });
 
 // time and date elements
+var time = moment().format("HH:mm A");
+$(".time").text(time);
+
 var date = moment().format("Do MMMM YYYY");
 $(".date").text(date);
 
 var day = moment().format("dddd");
 $(".day").text(day);
 
-var time = moment().format("HH:MM A");
-$(".time").text(time);
+
 
 //Jquery - submit button
 $(".saveBtn").on("click", function () {
@@ -38,7 +40,7 @@ $(".saveBtn").on("click", function () {
   localStorage.setItem(time, activity);
 });
 
-$("");
+
 $("#8 .description").val(localStorage.getItem("8"));
 $("#9 .description").val(localStorage.getItem("9"));
 $("#10 .description").val(localStorage.getItem("10"));
@@ -168,3 +170,4 @@ if (currentHour > 18) {
 } else if (currentHour < 18) {
   $(".time18").addClass("futureTime");
 }
+
