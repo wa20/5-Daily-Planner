@@ -30,7 +30,7 @@ $(".day").text(day);
 
 
 //Jquery - submit button
-$(".saveBtn").on("click", function () {
+$(".saveBtn").on("click", function (){
   var activity = $(this).siblings(".description").val();
   var time = $(this).parent().attr("id");
 
@@ -57,7 +57,7 @@ $("#18 .description").val(localStorage.getItem("18"));
 
 $(".clear").text("CLEAR ALL");
 
-$(".clear").on("click", function () {
+$(".clear").on("click", function (){
   var clear = window.confirm("WARNING: THIS WILL CLEAR ALL DATA?");
 
   if (!clear) {
